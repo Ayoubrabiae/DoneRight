@@ -256,7 +256,7 @@ span {
   border-radius: 30px;
   opacity: 0;
   transition-duration: 0.3s;
-  min-width: 150px;
+  min-width: 200px;
 }
 
 .undo i {
