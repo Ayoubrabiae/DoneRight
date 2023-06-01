@@ -69,7 +69,6 @@ const addTasksToLocalStorage = () => {
     tasksArr.push(inputField.value);
   }
   localStorage.setItem("tasksArr", JSON.stringify(tasksArr));
-  console.log(tasksArr);
 };
 
 // Add tasks from localStorage to the document
@@ -167,6 +166,14 @@ const editeTask = (e) => {
     addBtn.addEventListener("click", () => {
       unBlurElement(e);
       inputField.value = "";
+      let index = [...document.querySelectorAll(".box")].indexOf(
+        e.target.parentElement.parentElement
+      );
+      let element =
+        e.target.parentElement.parentElement.querySelector("span").textContent;
+      let tasksArr = JSON.parse(localStorage.getItem("tasksArr"));
+      tasksArr[index] = element;
+      localStorage.setItem("tasksArr", JSON.stringify(tasksArr));
       addBtn.classList.remove("fa-check");
       addBtn.classList.add("fa-plus");
     });
@@ -244,6 +251,3 @@ inputField.addEventListener("keydown", (e) => {
     addBtn.click();
   }
 });
-
-console.log(localStorage);
-// localStorage.clear();
