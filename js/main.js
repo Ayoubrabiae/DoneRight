@@ -39,12 +39,12 @@ const blurElement = (e) => {
   e.target.parentElement.parentElement.parentElement.childNodes.forEach(
     (e, i) => {
       if (i != 0) {
-        e.style.filter = "blur(1px)";
+        e.style.filter = "grayscale(1)";
       }
     }
   );
 
-  e.target.parentElement.parentElement.style.filter = "blur(0)";
+  e.target.parentElement.parentElement.style.filter = "grayscale(0)";
   e.target.style.opacity = "1";
 };
 
@@ -52,7 +52,7 @@ const unBlurElement = (e) => {
   e.target.parentElement.parentElement.parentElement.childNodes.forEach(
     (e, i) => {
       if (i != 0) {
-        e.style.filter = "blur(0)";
+        e.style.filter = "grayscale(0)";
       }
     }
   );
