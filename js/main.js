@@ -34,7 +34,7 @@ const addTask = (taskText) => {
   }
 };
 
-// Blur Element wich doesn't selected
+// Blur Element which doesn't selected
 const blurElement = (e) => {
   e.target.parentElement.parentElement.parentElement.childNodes.forEach(
     (e, i) => {
