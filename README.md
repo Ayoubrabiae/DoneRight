@@ -10,7 +10,7 @@ DoneRight is a simple todo list application built using HTML, CSS, and JavaScrip
 
 ## Demo
 
-A live demo of the Done Write application is available at [DoneRight](https://ayoubrabiae.github.io/DoneRight/). 
+A live demo of the DoneRight application is available at [DoneRight](https://ayoubrabiae.github.io/DoneRight/). 
 
 ## Usage
 
